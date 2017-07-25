@@ -4,7 +4,11 @@ pipeline {
     stage('Staging') {
       steps {
         shell 'echo Deploying Staging'
-        sh 'echo "Test"'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'echo \'Test\''
       }
     }
   }
