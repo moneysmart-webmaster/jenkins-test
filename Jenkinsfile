@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Staging') {
       steps {
-        shell('echo Deploying Staging')
+        shell 'echo Deploying Staging'
+        sh 'echo "Test"'
       }
     }
   }
