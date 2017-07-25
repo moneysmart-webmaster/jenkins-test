@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Staging') {
       steps {
-        shell 'echo Deploying Staging'
+        sh 'echo \'Deploying Staging\''
       }
     }
   }
